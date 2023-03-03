@@ -14,19 +14,17 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
-
+        <Header /> {/* Asni */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Answer" element={<Answer />} />
-          <Route path="/AskQuestion" element={<AskQuestion />} />
+          <Route path="/" element={<Home />} /> {/* Jerry */}
           <Route path="/Questions" element={<Questions />} />
+          <Route path="/Login" element={<Login />} /> {/* Hana */}
+          <Route path="/Signup" element={<Signup />} /> {/* Asre */}
+          <Route path="/About" element={<About />} /> {/* Kal */}
+          <Route path="/Answer" element={<Answer />} /> {/* Mame */}
+          <Route path="/AskQuestion" element={<AskQuestion />} /> {/* Mame */}
         </Routes>
-
-        <Footer />
+        <Footer /> {/* Elc */} {/* Yemi */}
       </div>
     </Router>
   );
