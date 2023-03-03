@@ -14,17 +14,17 @@ function App() {
   return (
     <Router>
       <div>
-        <Header /> {/* Asni */}
+        <Header /> {/* Asni */} {/* Yemi */}
         <Routes>
           <Route path="/" element={<Home />} /> {/* Jerry */}
-          <Route path="/Questions" element={<Questions />} />
+          <Route path="/Questions" element={<Questions />} /> {/* Jerry */}
           <Route path="/Login" element={<Login />} /> {/* Hana */}
           <Route path="/Signup" element={<Signup />} /> {/* Asre */}
           <Route path="/About" element={<About />} /> {/* Kal */}
           <Route path="/Answer" element={<Answer />} /> {/* Mame */}
-          <Route path="/AskQuestion" element={<AskQuestion />} /> {/* Mame */}
+          <Route path="/AskQuestion" element={<AskQuestion />} /> {/* Eyu */}
         </Routes>
-        <Footer /> {/* Elc */} {/* Yemi */}
+        <Footer /> {/* Elc */} {/* Sule */}
       </div>
     </Router>
   );
