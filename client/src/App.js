@@ -13,7 +13,6 @@ import Signup from "./Pages/Signup/Signup";
 function App() {
   return (
     <Router>
-      <div>
         <Header /> {/* Asni */} {/* Yemi */}
         <Routes>
           <Route path="/" element={<Home />} /> {/* Jerry */}
@@ -25,7 +24,6 @@ function App() {
           <Route path="/AskQuestion" element={<AskQuestion />} /> {/* Eyu */}
         </Routes>
         <Footer /> {/* Elc */} {/* Sule */}
-      </div>
     </Router>
   );
 }
