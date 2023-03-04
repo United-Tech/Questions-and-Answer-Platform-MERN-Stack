@@ -1,0 +1,44 @@
+
+
+.main {
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 3px 25px rgb(156,156,156);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 150px;
+
+}
+
+.submit{
+    width:35%;
+    height: 35px;
+    background-color:#fd7e14;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.submit:hover {
+    transform: scale(1.25);
+}
+.create-account-link{
+    color:#fd7e14;
+}
+
+input{
+    width: 75%;
+}
+.bi-eye-slash{
+    margin-top: -63px;
+    margin-right: -250px;
+}
