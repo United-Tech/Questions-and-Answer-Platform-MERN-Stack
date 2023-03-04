@@ -4,41 +4,80 @@
   background-color: white;
   width: 350px;
   height: 400px;
-  position: relative;
   border-radius: 10px;
   box-shadow: 0 3px 25px rgb(156,156,156);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-left: 150px;
-
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 .submit{
-    width:35%;
+    width:50%;
     height: 35px;
     background-color:#fd7e14;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
     border-radius: 8px;
-    cursor: pointer;
     border: none;
+    margin-top: 8px;
 }
 .submit:hover {
-    transform: scale(1.25);
+    transform: scale(1.10);
 }
 .create-account-link{
     color:#fd7e14;
+    
+   
 }
 
 input{
-    width: 75%;
+    width: 100%;
 }
-.bi-eye-slash{
-    margin-top: -63px;
-    margin-right: -250px;
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+} 
+
+
+input[type="text"] {
+    margin-bottom: 8px;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+@media  (min-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+
+
+}
+
+@media  (min-width: 992px) {
+  .main {
+    max-width: 800px;
+  }
+
 }
