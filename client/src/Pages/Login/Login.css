@@ -75,7 +75,7 @@ input[type="text"] {
 
 }
 
-@media  (min-width: 980px) {
+@media  (min-width: 992px) {
   .main {
     max-width: 800px;
   }
