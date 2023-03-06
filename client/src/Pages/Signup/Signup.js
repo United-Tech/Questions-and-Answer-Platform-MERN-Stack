@@ -33,7 +33,6 @@ const Signup = () => {
           <Link className="link" to="/login">
             sign in
           </Link>
-          
           <form className="sign">
             <input type="text" className="email" placeholder="Email"></input>
             <br></br>
@@ -43,21 +42,18 @@ const Signup = () => {
             </div>
             <input className="userName" placeholder="User Name"></input>
             <br></br>
+            <div className="password">
+              <input
+                type={passwordType}
+                onChange={handlePasswordChange}
+                value={passwordInput}
+                name="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
 
-            <input
-             className="password"
-              type={passwordType}
-              onChange={handlePasswordChange}
-              value={passwordInput}
-              name="password"
-              class="form-control"
-              placeholder="Password"
-            />
-
-            <span
-              className="eye"
-              onClick={togglePassword}
-            >
+            <span className="eye" onClick={togglePassword}>
               {passwordType === "password" ? (
                 <i className="bi bi-eye-slash"></i>
               ) : (
