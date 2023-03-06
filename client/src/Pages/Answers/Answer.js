@@ -3,22 +3,19 @@ import "./Answer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
-import Question from "../Questions copy/Question";
-import User from "../User/User";
-import AnswerDetail from "../Answer/AnswerDetail";
+import Question from "../Questions/Question";
+
+import AnswerDetail from "../AnswerDetail/AnswerDetail";
 const Answer = () => {
   return (
     <div className="container">
       <Question />
       <h2 className="community_answer my-3">Answer From The Community</h2>
-      <div className="d-flex">
-        <div>
-      
 
-          <div className=""><User/></div>
-        </div>
-        <div className="mx-5 my-4"> <AnswerDetail/></div>       
+      <div>
+        <AnswerDetail />
       </div>
+
       <h3 className="text-center my-4">Answer The Top Question</h3>
       {/* <Link to="/try" className="text-center my-4">
         Go to Question Page
