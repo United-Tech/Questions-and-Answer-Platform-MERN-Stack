@@ -33,6 +33,7 @@ const Signup = () => {
           <Link className="link" to="/login">
             sign in
           </Link>
+          
           <form className="sign">
             <input type="text" className="email" placeholder="Email"></input>
             <br></br>
@@ -44,6 +45,7 @@ const Signup = () => {
             <br></br>
 
             <input
+             className="password"
               type={passwordType}
               onChange={handlePasswordChange}
               value={passwordInput}
