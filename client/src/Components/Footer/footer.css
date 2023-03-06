@@ -1,0 +1,14 @@
+.footer {
+    background-color:black !important;
+    color: darkgray !important;
+    padding: 20px 0 !important;
+    height: 200px !important;
+    top: auto !important;
+    margin-top: auto !important;
+    padding-bottom: 50px !important;
+}
+
+.footer_links{
+    display: flex !important;
+    justify-content: space-around !important;
+}
