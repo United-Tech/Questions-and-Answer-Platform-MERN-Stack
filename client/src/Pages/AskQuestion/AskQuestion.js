@@ -39,7 +39,7 @@ export default function AskQuestion() {
           ></textarea>
 
           <button className="question-btn btn-lg" type="">
-            Post Your Question
+            <Link to='/'>Post Your Question</Link>
           </button>
         </form>
       </div>

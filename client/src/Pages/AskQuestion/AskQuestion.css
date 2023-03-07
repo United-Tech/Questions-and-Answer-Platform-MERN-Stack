@@ -71,6 +71,11 @@
   border-radius: 7px;
 }
 
+.question-btn a{
+  text-decoration: none;
+  color: white;
+}
+
 .question-btn:hover {
   background-color: #fe8402;
 }
