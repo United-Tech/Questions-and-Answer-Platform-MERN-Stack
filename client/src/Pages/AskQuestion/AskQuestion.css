@@ -1,3 +1,8 @@
+.AskQuestion {
+  width: 980px;
+  margin: 0 auto;
+}
+
 .question_steps {
   font-size: large;
 }
