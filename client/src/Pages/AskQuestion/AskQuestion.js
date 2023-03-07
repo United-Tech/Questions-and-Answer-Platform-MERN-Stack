@@ -16,32 +16,34 @@ export default function AskQuestion() {
           </ul>
         </div>
 
-        <form className="d-flex flex-column p-5 question_form  justify-content-between">
-          <div className="linkDiv">
-            <h3>Ask a Public Question</h3>
+        <div className="container">
+          <form className="d-flex flex-column p-5 question_form  justify-content-between">
+            <div className="linkDiv">
+              <h3>Ask a Public Question</h3>
 
-            <Link to="/" className="linkQuestion text-reset">
-              Go to Question Page
-            </Link>
-          </div>
+              <Link to="/" className="linkQuestion text-reset">
+                Go to Question Page
+              </Link>
+            </div>
 
-          <input
-            className="question-title"
-            type="text"
-            name="question"
-            Placeholder="Title"
-          />
+            <input
+              className="question-title"
+              type="text"
+              name="question"
+              Placeholder="Title"
+            />
 
-          <textarea
-            className="question-input"
-            placeholder="Question Description..."
-            name="questionDescription"
-          ></textarea>
+            <textarea
+              className="question-input"
+              placeholder="Question Description..."
+              name="questionDescription"
+            ></textarea>
 
-          <button className="question-btn btn-lg" type="">
-            <Link to='/'>Post Your Question</Link>
-          </button>
-        </form>
+            <button className="question-btn btn-lg" type="">
+              <Link to="/">Post Your Question</Link>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
