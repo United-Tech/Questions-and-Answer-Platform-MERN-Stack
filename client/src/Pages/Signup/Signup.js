@@ -1,37 +1,31 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import About from "../../Components/About/About";
 import "./Signup.css";
 // import { BiEyeSlash,BiEye } from "bootstrap-icons";
 
-
-
-
-
 const Signup = () => {
-
-    const [passwordType, setPasswordType] = useState("password");
-    const [passwordInput, setPasswordInput] = useState("");
-    const handlePasswordChange = (evnt) => {
-      setPasswordInput(evnt.target.value);
-    };
-    const togglePassword = () => {
-      if (passwordType === "password") {
-        setPasswordType("text");
-        return;
-      }
-      setPasswordType("password");
-    };
-  
-
+  const [passwordType, setPasswordType] = useState("password");
+  const [passwordInput, setPasswordInput] = useState("");
+  const handlePasswordChange = (evnt) => {
+    setPasswordInput(evnt.target.value);
+  };
+  const togglePassword = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
 
   return (
     <div className="signup_page">
       <div className="signup">
         <h5>join the network</h5>
-        <p>
-          Already have an account?
+        <>
+          Already have an account?{" "}
           <Link className="link" to="/login">
-            sign in
+            Sign in
           </Link>
           <form className="sign">
             <input type="text" className="email" placeholder="Email"></input>
@@ -48,7 +42,7 @@ const Signup = () => {
                 onChange={handlePasswordChange}
                 value={passwordInput}
                 name="password"
-                class="form-control"
+                className="password"
                 placeholder="Password"
               />
             </div>
@@ -70,24 +64,26 @@ const Signup = () => {
           <br></br>
           <div className="agree">
             <span>
-              I agree to the
+              I agree to the{" "}
               <Link className="link" to="#">
-                privacy policy.
+                privacy policy
               </Link>{" "}
               and{" "}
               <Link className="link" to="#">
-                retms of service
+                terms of service
               </Link>
             </span>
           </div>
           <br></br>
           <Link className="link" to="/login">
-            Already have an account?
+            Already have an account? Sign in
           </Link>
-        </p>
+        </>
       </div>
 
-      <div className="about"></div>
+      <div className="about">
+        <About />
+      </div>
     </div>
   );
 };

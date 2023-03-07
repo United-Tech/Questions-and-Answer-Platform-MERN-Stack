@@ -1,0 +1,75 @@
+.question_steps {
+  font-size: large;
+}
+
+.question_form {
+  min-height: 500px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #ffffff;
+}
+
+.linkDiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.linkQuestion {
+	cursor: pointer;
+	text-decoration: none;
+	color: white !important;
+	background: #fe8402;
+	border: 1px solid transparent;
+	border-radius: 7px;
+	height: 42px;
+	min-width: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.linkQuestion:hover {
+	background: #516cf0;
+}
+
+.question-title {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  border: silver 1px solid;
+}
+
+.question-title:focus {
+  outline: none;
+}
+
+.question-input {
+  height: 200px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1.15384615rem;
+  border: silver 1px solid;
+}
+
+.question-input:focus {
+  outline: none;
+}
+
+.question-btn {
+  font-size: 1rem;
+  color: white;
+  height: 42px;
+  max-width: 200px;
+  background-color: #516cf0;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
+.question-btn:hover {
+  background-color: #fe8402;
+}
+
+.question-btn:active {
+  background-color: #516cf0;
+}

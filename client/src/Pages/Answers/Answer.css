@@ -1,15 +1,18 @@
+.fixWidth {
+  width: 900px;
+  margin: 20px auto;
+}
 
 .community_answer {
-    text-align: left;
+  text-align: left;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   height: 1.5em;
 }
-textarea{
- 
-    height: 200px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px 15px;
-}
 
+textarea {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 15px;
+}

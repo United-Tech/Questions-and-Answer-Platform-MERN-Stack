@@ -1,0 +1,106 @@
+.login_page {
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .login_page {
+    flex-direction: column;
+  }
+}
+
+.login_pageAbout {
+  max-width: 460px !important;
+  height: 545px;
+  padding-top: 50px;
+} 
+
+.main {
+  background-color: white;
+  max-width: 460px !important;
+  height: 545px;
+  width: 90% !important;
+  border-radius: 10px;
+  box-shadow: 0 3px 25px #9c9c9c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.submit {
+  width: 50%;
+  height: 35px;
+  background-color: #fd7e14;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 8px;
+  height: 50px;
+}
+
+.submit:hover {
+  background-color: #ff7300;
+}
+
+.create-account-link {
+  color: #fd7e14;
+}
+
+.login_page input {
+  width: 100%;
+}
+
+.login_page form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+
+.login_page input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.login_page input {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid #3f3636;
+  height: 50px;
+}
+
+.password-input-container {
+  position: relative;
+
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .login_page form {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    max-width: 800px;
+  }
+}

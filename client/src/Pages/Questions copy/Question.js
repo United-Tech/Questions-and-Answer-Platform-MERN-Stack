@@ -35,15 +35,14 @@ function Question() {
   return (
     <div>
       <h2>Question</h2>
-      {/* {question.map((data) => {
-        const { User_question, User_questionDes } = data;
-        let singleQuestion = ( */}
+      {/* {question.map((data) => { */}
+      {/* const { User_question, User_questionDes } = data; */}
+      {/* let singleQuestion = ( */}
       <div>
         <h4>{question[0].User_question}</h4>
         <h5>{question[0].User_questionDes}</h5>
       </div>
-      {/* ); */}
-      {/* return singleQuestion; */}
+      {/* ); return singleQuestion; */}
       {/* })} */}
     </div>
   );
